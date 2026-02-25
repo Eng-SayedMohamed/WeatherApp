@@ -1,5 +1,7 @@
 # WeatherApp
 
+**WeatherApp** is a responsive Angular application that lets users search for current weather information by city. It features a clean glassmorphism-style weather card, dynamic day/night gradient backgrounds, and detailed weather metrics. The UI is styled with TailwindCSS and incorporates Lucide icons for enhanced visual appeal.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.3.
 
 ## Development server
