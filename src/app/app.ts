@@ -29,7 +29,6 @@ export class App implements OnInit {
           this.weather
             .getLocation(position.coords.latitude, position.coords.longitude)
             .subscribe((res) => {
-              console.log(res);
               if (res.status.message == 'OK') {
                 this.getWeather(res.results[0].components.city);
               }
@@ -43,7 +42,6 @@ export class App implements OnInit {
   getWeather(city: string) {
     this.weather.getWeather(city).subscribe({
       next: (res) => {
-        console.log(res);
         this.data.set(res);
       },
     });
