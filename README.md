@@ -4,13 +4,21 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ## Development server
 
-To start a local development server, run:
+This application has been customized with TailwindCSS for styling and uses Lucide icon components for the UI. Before starting the server, make sure to install the new dependencies:
+
+```bash
+npm install tailwindcss postcss autoprefixer @tailwindcss/postcss lucide-angular
+```
+
+(If you already have Tailwind installed only the last package is required.)
+
+To start the local development server run:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The WeatherApp provides a responsive search bar, glassmorphism weather card, dynamic day/night gradient, and a details grid. It will automatically reload whenever you modify any of the source files.
 
 ## Code scaffolding
 
