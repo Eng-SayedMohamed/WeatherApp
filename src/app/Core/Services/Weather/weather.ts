@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class Weather {
   private readonly http = inject(HttpClient);
-  getWeather(city: string = 'cairo'): Observable<any> {
+  getWeather(city: string): Observable<any> {
     return this.http.get(
       `https://api.weatherapi.com/v1/current.json?key=d0e0330cbd624226ad1154926262402&q=${city}`,
     );
