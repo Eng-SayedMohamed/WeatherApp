@@ -41,7 +41,6 @@ export class App implements OnInit {
   getWeather(city: string) {
     this.weather.getWeather(city).subscribe({
       next: (res) => {
-        console.log(res);
         this.data.set(res);
       },
     });
