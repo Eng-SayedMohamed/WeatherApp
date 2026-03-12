@@ -19,7 +19,6 @@ export class App implements OnInit {
     this.getWeather('cairo');
     this.getLocation();
   }
-
   getLocation() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
@@ -42,6 +41,7 @@ export class App implements OnInit {
   getWeather(city: string) {
     this.weather.getWeather(city).subscribe({
       next: (res) => {
+        console.log(res);
         this.data.set(res);
       },
     });
